@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Обратная связь</title>
+</head>
+<body>
+    <header class="blue_square">
+        <a href = "../index.html" class="header-logo"></a>
+        <div class = "text-logo"><h1 class="logo-text">МБУ ДО Детская музыкальная школа №4 г.Пересвет</h1>
+             <h2 class = "logo-text2">Муниципальное бюджетное учреждение дополнительного образования</h2></div>
+        <div class = "contacts">
+            <p class = "contacts-text">Контактный телефон: +7 (496) 5467711</p>
+            <p class = "contacts-text">Адрес: 141320, Московская область, Сергиево-Посадский городской округ, город Пересвет, улица Первомайская, дом 8</p>
+            <p class = "contacts-text">E-mail: liradms@mail.ru</p>
+        </div>
+</header>
+<div class="content-div">
+    <nav class="menu">
+        <div id="burger-menu" class="burger-menu"><img src="../img/burger.svg"></div>
+        <div id="burger-menu-close" class="burger-menu-close"><img src="../img/burger-close.svg"></div>  
+        <a class="burger-menu_button" href="../index.html"><button id="menu-button1" class="menu-button" >Главная</button></a>
+        <a class="burger-menu_button" href="../About/about.html"><button id="menu-button2" class="menu-button" >О нас</button></a>
+        <a class="burger-menu_button" href="../info/info.html"><button id="menu-button3" class="menu-button" >Для поступающих</button></a>
+        <a class="burger-menu_button" href="../news/news.html"><button id="menu-button4" class="menu-button" >Новости</button></a>
+        <a class="burger-menu_button" href="../contacts/contacts.html"><button id="menu-button5" class="menu-button" >Контакты</button></a>
+        <a class="burger-menu_button" href="../calling/calling.html"><button id="menu-button6" class="menu-button" >Обратная связь</button></a>
+      </nav>
+  <main>
+       <form>
+         <div class="form-class">
+         <h3>E-mail*</h3>
+         <input id="form1" class="caling-input" type="text">
+         </div>
+         <div class="form-class">
+         <h3>Представьтесь*</h3>
+         <input id="form2" class="caling-input" type="text">
+        </div class="form-class">
+        <div class="form-class">
+         <h3>Сообщение*</h3>
+         <textarea id="form3"></textarea>
+         <br>
+        </div>
+         <img src="../img/kapcha.png">
+         <br>
+         <div class="soglasie">
+         <input id="form4" class="caling-check" type="checkbox">
+         <h3>Я согласен(а) на <a href="#" class="js-open-modal" data-modal="1">обработку моих персональных данных*</a></h3>
+         <div class="modal" data-modal="1">
+            <!--   Svg иконка для закрытия окна  -->
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+            <p class="modal__title">
+                <p>Согласие на обработку персональных данных</p>
+                <p>Принимаю решение о предоставлении моих персональных данных и даю согласие на их обработку свободно, своей волей и в своем интересе.</p>
+                <p>Наименование и адрес оператора, получающего согласие субъекта персональных данных:</p>
+                <p>Муниципальное бюджетное учреждение дополнительного образования "Детская музыкальная школа №4 г.Пересвет"</p>
+                <p>Со следующей целью обработки персональных данных:</p>
+                <p>Создание информационной базы данных.</p>
+                <p>Перечень персональных данных, на обработку которых дается согласие субъекта персональных данных:</p>
+                <p>Фамилия; имя; отчество; Электронный адрес.</p>
+                <p>Наименование и адрес лица, осуществляющего обработку персональных данных по поручению оператора (если обработка будет поручена такому лицу):</p>
+                <p>Обработка персональных данных третьими лицами не осуществляется.</p>
+                <p>Перечень действий с персональными данными, на исполнение которых дается согласие, общее описание используемых оператором способов обработки персональных данных:</p>
+                <p>Обработка вышеуказанных персональных данных будет осуществляться путем смешанной (автоматизированной и неавтоматизированной) обработки персональных данных, а именно: сбор, систематизация, накопление, хранение, уточнение (обновление, изменение), извлечение, использование, передача (распространение, предоставление, доступ), блокирование, удаление персональных данных.</p>
+                <p>Срок действия согласия субъекта персональных данных, а также способ его отзыва, если иное не установлено федеральным законом:</p>
+                <p>Согласие действует бессрочно, до его отзыва субъектом персональных данных путем письменного обращения к оператору.</p>
+                <p>Субъект персональных данных уведомляется о том, что в случае отзыва субъектом персональных данных согласия на обработку персональных данных, оператор вправе продолжить обработку персональных данных без согласия субъекта персональных данных в соответствии с частью второй статьи 9 Федерального закона от 27 июля 2006 года № 152-ФЗ «О персональных данных».</p>
+                </p>
+         </div>
+         <div class="overlay js-overlay-modal"></div>
+        </div>
+         <h3>* - обязательные поля для заполнения</h3>
+         <button id="form" class="calling-button">Отправить</button>
+       </form>
+    </main>
+    <div class="menu2">
+        <div class="poisk">
+            <input id="input-place" type ="text" value="Поиск...">
+            <button id = "input-button"><img height="50px" src = "../img/lupa.svg"></button>
+        </div>
+        <br>
+        <div class="other-sites">
+          <a href="https://mosreg.ru/"><button class = "other-sites-button">Правительство МО</button></a> 
+          <a href="https://mk.mosreg.ru/"><button class = "other-sites-button">Минестерство культуры МО</button></a>
+          <a href="http://www.sergiev-reg.ru/"><button class = "other-sites-button">Администрация Сергиево-Посадского городского округа</button></a>
+          <a href="https://welcome.mosreg.ru/"><button class = "other-sites-button">Путеводитель по МО</button></a>
+          <a href="http://spculture.ru/"><button class = "other-sites-button">Управление развития социальной сферы администрации Сергиево-Посадского городского округа</button></a>
+        </div>
+      </div>
+    </div>
+    </div>
+    <br>
+    <footer class = "footer-blue">
+        <div class="copyright">
+            <h5>© МБУ ДО Детская музыкальная школа №4 г.Пересвет.</h5>
+            <div class="icons">
+                <a href = "https://vk.com/id456980785"><img class="icons" src="../img/icon1.png"></a>
+          <a href = "https://www.facebook.com/profile.php?id=100014196695780"><img class="icons" src="../img/icon2.png"></a>
+          <a href = "https://ok.ru/dk?st.cmd=anonymMain&st.redirect=%2Ffeed"><img class="icons" src="../img/icon3.png"></a>
+          <a href = "https://my.mail.ru/"><img class="icons" src="../img/icon4.png"></a>
+          <a href = "https://twitter.com/home"><img class="icons" src="../img/icon5.png"></a>
+            </div>
+        </div>
+        <div class = "contacts">
+            <p class = "contacts-text">Контактный телефон: +7 (496) 5467711</p>
+            <p class = "contacts-text">Адрес: 141320, Московская область, Сергиево-Посадский городской округ, город Пересвет, улица Первомайская, дом 8</p>
+            <p class = "contacts-text">E-mail: liradms@mail.ru</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    </body>
+    </html>

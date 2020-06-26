@@ -1,0 +1,363 @@
+@font-face{
+  font-family: "Anime Ace"; /*  Для обычного текста  */
+  src: url("../fonts/AnimeAce.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face{
+  font-family: "Goose"; /*  Для названия  */
+  src: url("../fonts/Goose.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face{
+  font-family: "NexaScriptLight";    /*  Заголовки/крупный шрифт */
+  src: url("../fonts/NexaScriptLight.ttf") format("truetype");
+  font-style: normal;
+}
+@font-face{
+  font-family: "VinnytsiaSansRegular";   /*  Кнопки */ 
+  src: url("../fonts/VinnytsiaSansRegular.ttf") format("truetype");
+  font-style: normal;
+}
+
+*{
+  font-family: "Anime Ace";
+}
+h1{
+  font-family: "Goose";
+}
+h2{
+  font-family: "Goose";
+}
+h3{
+  font-family: "NexaScriptLight";  
+}
+html { overflow-x: hidden; }
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  margin: 0;
+  width: 100vw;
+}
+.blue_square{
+    background: #C7E6FD;
+    border: solid #C7E6FD;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-logo{
+  background-image:url(../img/logo.svg);
+  background-size:cover;
+  background-position:center;
+  width: 40vmin;
+  height: 30vmin;
+  margin: auto;
+  display: block;
+  padding: 40px;
+}
+img{  
+  max-width: 100%;
+}
+.logo-text{
+    width: 60vw;
+    font-size: 3.5vw;
+    line-height: 75px;
+    text-align: center;
+    margin-bottom: 1px;
+}
+.text-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.logo-text2{
+    font-size: 1.5vw;
+    line-height: 75px;
+    text-align: center;
+}
+.contacts{
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+}
+.contacts-text{
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    padding: 15px;
+    font-family: "Goose";
+}
+
+.content-div{
+    display: flex;
+    flex-direction: row;
+    width: 98vw;
+}
+
+.burger-menu{
+ width: 111px;
+ display: none;
+}
+.burger-menu-close{
+  width: 111px;
+  border:none;
+  outline: none;
+  display: none;
+ }
+.burger-menu_button{
+  display: block;
+  cursor: pointer;
+}
+.menu{
+    width: 20vw;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.menu-button{
+    width: 20vw;
+    height: 64px;
+    background: rgba(199, 230, 253, 0.28);
+    border: 5px solid #C7E6FD;
+    border-radius: 62px;
+    margin: 5px;
+    font-size: 2vw;
+    font-family: "VinnytsiaSansRegular";
+    line-height: 20px;
+    text-align: center;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #6e808d;;
+    transition: 0.2s;
+}
+.menu-button:hover{
+  background: #C7E6FD;
+}
+.menu-button:active{
+  background: #C7E6FD;
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+main{
+  margin-left: 2vw;
+  width:60vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.poisk{
+  position: relative;
+  margin-top:20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu2{
+display: flex;
+flex-direction: column;
+align-items:center;
+width: 20vw;
+}
+
+#input-place{
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  width: 15vw;
+  background: #FFFFFF;
+  border: 5px solid #C7E6FD;
+  border-radius: 62px 0px 0px 62px;
+  outline: none;
+  padding-left: 10px;
+}
+#input-button{
+  width: 80px;
+  height: 62px;
+  background: rgba(199, 230, 253, 0.28);
+  border: 5px solid #C7E6FD;
+  border-radius: 0px 62px 62px 0px;
+  right: 0;
+  outline: none;
+  transition: 0.2s;
+}
+#input-button:active{
+background: #C7E6FD;
+box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+.other-sites{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.other-sites-button{
+  height: 5vw;
+  width: 20vw;
+  margin: 5px;
+  font-size: 1vw;
+  font-family: "VinnytsiaSansRegular";
+  background: #FFFFFF;
+  border: 4px solid #A0D7FF;
+  border-radius: 20px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #6e808d;;
+  transition: 0.2s;
+}
+.other-sites-button:hover{
+  background: #A0D7FF;
+}
+.other-sites-button:active{
+background: #A0D7FF;;
+top: .1em;
+left: .1em;
+box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+.main-text{
+  font-weight: normal;
+  font-size: 24px;
+  text-align: center;
+}
+.text-main{
+  font-weight: normal;
+  font-size: 48px;
+  text-align: center;
+}
+.footer-blue{
+      background: #C7E6FD;
+      border: solid #C7E6FD;
+      border-radius: 20px 20px 0px 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items:center;
+      width: 100vw;
+}
+.copyright{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  margin:5px;
+}
+@media screen and (max-width: 1024px){
+  .contacts{
+    display: none;
+  }
+  .logo-text2{
+    font-size: 1.8vw;
+  }
+  .content-div{
+    flex-direction: column;
+  }
+  .menu{
+    margin-left: auto;
+    margin-right: auto;
+    order: 1;
+    width: 50vw;
+  }
+  .menu-button{
+    width: 50vw;
+    font-size: 4vw;
+  }
+  main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95vw;
+    font-size: 3vw;
+    order: 3;
+  }
+  .menu2{
+    margin-left: auto;
+    margin-right: auto;
+    order: 2;
+  }
+  .other-sites-button{
+    font-size: 3vw;
+    height: 35vw;
+    width: 35vw;
+  }
+  .other-sites{
+    width: 95vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #input-place{
+    width: 50vw;
+  }
+  .footer-blue{
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px){
+.logo-text2{
+  font-size: 15px;
+  line-height: normal;
+}
+.logo-text{
+  font-size: 24px;
+  line-height: normal;
+}
+}
+
+@media screen and (max-width: 600px){
+.burger-menu{
+  display: block;
+}
+.text-logo{
+  display: none;
+}
+.menu-button{
+  display: none;
+}
+.other-sites{
+  flex-direction: column;
+}
+main{
+  font-size: 5vw;
+}
+.other-sites-button{
+  height: 35vw;
+  width: 75vw;
+  font-size: 16px;
+}
+#input-place{
+  width: 65vw;
+}
+.header-logo{
+  width: 20vmin;
+  height: 15vmin;
+}
+.logo-text2{
+  font-size: 14px;
+  line-height: normal;
+}
+.logo-text{
+  font-size: 18px;
+  line-height: normal;
+}
+.text-main{
+  font-size: 24px;
+}
+
+}
